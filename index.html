@@ -3,3 +3,27 @@
 <div> i em from Russan </div>
 <div> i em from Russan </div>
 <div> i em from Russan </div>
+
+<script>
+    let a = {
+        name: "Dima",
+        age: 30,
+        student: [1,2,3],
+        classroom: {
+            teatcher:{
+                name: 10,
+                tel: 234
+            }
+        }
+    }
+
+    let b = structuredClone(a)
+
+
+    b.classroom.teatcher.name = "jone";
+b.student=[2,3]
+
+    console.log(b.student===a.student)
+    console.log(b.classroom.teatcher===a.classroom.teatcher)
+
+</script>
